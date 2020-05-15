@@ -8,7 +8,10 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 
-class HeroDetailsViewModel(private val dashboardRepository: HeroDetailsRepository?, var hero: MarvelHeroesModel?) : BaseViewModelMarvel() {
+class HeroDetailsViewModel(
+    private val dashboardRepository: HeroDetailsRepository?,
+    var hero: MarvelHeroesModel?
+) : BaseViewModelMarvel() {
 
     private lateinit var comics: MutableLiveData<List<MarvelHeroesModel>>
 
